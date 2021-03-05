@@ -22,7 +22,7 @@ int main() {
             for(int j = 0; j < n; j++) {
                 // For each of its connections
                 for(int k = 0; k < n; k++) {
-                    if(v[i][k]==1 && v[i][j]==1 && v[j][k]==1 && i!=k && i!=j && j!=k) {
+                    if(v[i][k]==1 && v[i][j]==1 && v[j][k]==1 && i!=k && i!=j) {
                         weak = false;
                     }
                 }
@@ -33,6 +33,6 @@ int main() {
             }
         }
 
-        cout << endl;
+        cout << "\n"; //For larger inputs, it is faster to append the end line character than to write the text to a new line by typing endl.
     }
 }
